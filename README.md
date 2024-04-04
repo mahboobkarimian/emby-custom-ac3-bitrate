@@ -1,4 +1,4 @@
-# Emby Custom AC3 (Dolby Digital) Bitrate (1664000)
+# Emby Custom AC3 (Dolby Digital) Bitrate
 
 This is a hacky fix for this problem
 
@@ -6,7 +6,7 @@ https://emby.media/community/index.php?/topic/67030-adjust-bitrate-for-transcode
 
 My solution is to replace the **ffmpeg** binary with a wrapper that manipulates incoming arguments and then actually runs ffmpeg.
 
-It looks for arguments `-c:a:? ac3` then replaces `-ab:a:? ??????` with `-ab:a:? 1664000` or whatever you set `EMBY_CUSTOM_AC3_BITRATE` to.
+It looks for arguments `-c:a:? ac3` then replaces `-ab:a:? ??????` with `-ab:a:? 640000` or whatever you set `EMBY_CUSTOM_AC3_BITRATE` to.
 
 ## Using in Linux
 
