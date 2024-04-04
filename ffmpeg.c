@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
     }
 
     if (checkForAc3(args, argc)) {
-        char *customBitrate = getEnv("EMBY_CUSTOM_AC3_BITRATE", "1664000");
+        char *customBitrate = getEnv("EMBY_CUSTOM_AC3_BITRATE", "640000");
         modifyAudioBitrate(args, argc, customBitrate);
     }
 
